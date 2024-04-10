@@ -227,13 +227,16 @@ class IpGroupManager:
         )
         return response.json()
 
-    def update(self, ipgroup_id, ips_list):
+    def update(self, ipgroup_id, ipgroup_name, reference=None, ips_list=None):
         payload = {
             "id": ipgroup_id,
-            "ips": ips_list
+            "reference": reference,
+            "ips": ips_list,
+            "comment": ipgroup_name,
         }
         response = self.safeline.safeline_request(
-            requests.Request('PUT', f"{self.safeline.base_url}/api/open/ipgroup"), json=payload)
+            requests.Request('PUT', f"{self.safeline.base_url}/api/open/ipgroup", json=payload)
+        )
         return response.json()
 
     def get(self, ipgroup_id):
