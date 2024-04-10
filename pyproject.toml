@@ -1,0 +1,30 @@
+
+[project]
+name = "safeline"
+version = "0.0.4"
+description = "A simple SDK for SafeLine CE."
+authors = [
+  { name="AlliotTech", email="alliot@iots.vip" },
+]
+readme = "README.md"
+keywords = ['waf', 'safeline']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+  "requests",
+    "pyotp"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/AlliotTech/python-safeline"
+Issues = "https://github.com/AlliotTech/python-safeline/issues"
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
