@@ -1,7 +1,7 @@
 
 [project]
 name = "safeline"
-version = "0.0.5"
+version = "0.0.6"
 description = "A simple SDK for SafeLine CE."
 authors = [
   { name="AlliotTech", email="alliot@iots.vip" },

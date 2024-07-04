@@ -186,10 +186,11 @@ class CertificationManager:
                 "crt": crt,
                 "key": key
             },
-            "type": 2
+            "type": 2,
+            "id": cert_id
         }
         response = self.safeline.safeline_request(
-            requests.Request('PUT', f"{self.safeline.base_url}/api/open/cert/{cert_id}",
+            requests.Request('POST', f"{self.safeline.base_url}/api/open/cert",
                              json=payload))
         return response.json()
 
