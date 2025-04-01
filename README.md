@@ -10,15 +10,10 @@ import safeline
 
 if __name__ == '__main__':
     BASE_URL = "https://xxx.com"
-    USERNAME = "admin"
-    PASSWORD = "xxxx"
-
-    OTP_SECRET = "IX62FxxxxxxxxxxW2WB4C"
+    API_TOKEN = "IX62FxxxxxxxxxxW2WB4C"
 
     waf = SafeLine(BASE_URL,
-                   USERNAME,
-                   PASSWORD,
-                   OTP_SECRET
+                   API_TOKEN
                    )
 
     # list all certification  
